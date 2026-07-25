@@ -143,6 +143,39 @@
       background: #000;
     }
 
+    .failed-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1000px;
+      margin: 30px auto 0;
+    }
+
+    @media (max-width: 600px) {
+      .failed-grid { grid-template-columns: 1fr; }
+    }
+
+    .failed-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .failed-item video {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      background: #000;
+    }
+
+    .failed-item .failed-label {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #444;
+      margin: 6px 0 0;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
     @media (max-width: 768px) {
       .comp-command, .comp-comment { font-size: 0.75rem; }
       .comp-col-header { font-size: 0.85rem; }
@@ -399,6 +432,77 @@ respectively, while maintaining comparable task success.
         <p class="comp-comment">Comment: Success, but put more force than FE-VLA <a href="#force-comparison">(see comparison)</a></p>
         <video controls autoplay muted loop playsinline><source src="assets/pi05_grape.mp4" type="video/mp4"></video>
       </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>FE-VLA Failure Cases in real robot testing</h2>
+  <p style="max-width: 800px; margin: 20px auto; text-align: justify;">
+    A selection of episodes where pick and place operations failed, across the five object classes.
+  </p>
+  <div class="failed-grid">
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/cucumber/ep011_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Cucumber — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/cucumber/ep016_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Cucumber — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/cucumber/ep018_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Cucumber — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/egg/ep000_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Egg — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/egg/ep001_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Egg — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/egg/ep007_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Egg — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/grape/ep009_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Grape — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/grape/ep013_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Grape — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/lime/ep001_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Lime — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/lime/ep015_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Lime — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/lime/ep016_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Lime — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/orange/ep001_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Orange — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/orange/ep004_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Orange — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/orange/ep010_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Orange — Failed</p>
+    </div>
+    <div class="failed-item">
+      <video autoplay muted loop playsinline><source src="assets/fevla_failed_videos/orange/ep016_fail_top.mp4" type="video/mp4"></video>
+      <p class="failed-label">Orange — Failed</p>
     </div>
   </div>
 </section>
